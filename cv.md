@@ -24,7 +24,7 @@ Hello! My name is Artem, and I am aspiring to become a successful frontend devel
 *************************************************************
 
 
-### EXPERIENCE
+### CODE EXAMPLES
 ```
 function sayHello() {
   console.log("Hello, World!");
