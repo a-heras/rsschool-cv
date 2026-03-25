@@ -34,3 +34,28 @@ sayHello();
 
 
 *************************************************************
+
+
+### WORK EXPERIENCE
+Developed responsive web pages using HTML5, CSS3, and JavaScript.
+Assisted in building Single Page Applications (SPA) with React.js and Vue.js.
+Collaborated with designers to implement UI/UX improvements.
+Participated in code reviews and contributed to code refactoring to improve performance.
+Gained experience with Git version control. 
+
+
+*************************************************************
+
+
+### EDUCATION
+Grodno State College of engineering, technology and design
+
+
+*************************************************************
+
+
+### English level
+Beginner
+
+
+*************************************************************
