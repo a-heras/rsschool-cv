@@ -1,2 +1,1 @@
-# rsschool-cv
-CV
+https://a-heras.github.io/rsschool-cv/
