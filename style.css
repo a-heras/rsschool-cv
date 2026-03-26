@@ -1,24 +1,288 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-  background: #0b0e0f;
-  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-  line-height: 1.5;
-  color: #96949a;
-  padding: 2rem;
+    background: #0b0e0f;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+    color: #9c9ea2;
+    padding: 2rem;
 }
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    background-color: #ff511c;
+    width: 6rem;
+    height: 6rem;
+}
+.nav-menu ul {
+    padding: 1rem 2rem ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.06rem;
+    color: #e8dfd0;
+    padding: 0.5rem 0;
+    transition: color 0.2s;
+    text-transform: uppercase;
+}
+.nav-menu a:hover {
+    color: #ff511c;
+}
+
+.cv-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #23262a;
+    box-shadow: 5px 0px 40px 10px rgba(1, 2, 3, 0.1);
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.main-content {
+    padding: 2rem 2.5rem;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: 3px solid #ff511c;
+}
+
 .profile-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  /* Круглая форма */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.profile-info h1{
+    color: #ff511c;
+    text-transform: uppercase;
+}
+
+.contact-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+}
+
+.contact-icon {
+    min-width: 30px;
+    color: transparent;
+    background: #ff511c;
+    background-clip: text;
+}
+
+.contact-list a {
+    color: #96949a;   
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.profile-info .title {
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.info-section {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.info-section h2 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #ff511c;
+    border-left: 3px solid #ff511c;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.code-example-item {
+    margin-bottom: 1.8rem;
+}
+
+.code-example-item h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.code-block {
+    background: #0b0e0f;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+.code-block code {
+    color: #34ac6c;
+}
+
+.study-item {
+    margin-bottom: 1.5rem;
+}
+
+.study-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.study-year {
+    font-size: 0.8rem;
+    color: #ff511c;
+    font-weight: 500;
+}
+.study-title {
+    color: #e8dfd0;   
+    text-decoration: underline;
+}
+.study-item p {
+    font-size: 0.8rem;
+}
+
+.languages-list-main {
+    list-style: none;
+}
+
+.languages-list-main li {
+    margin-bottom: 1.2rem;
+}
+
+.languages-list-main .lang-name {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.5px;
   
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  background: #e8d9c5;
-  display: block;
-  margin: 0 auto;
-  /* Центрирование */
+}
+.languages-list-main .progress-bar {
+    background: #e8dfd0;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0.4rem 0;
+}
+
+.languages-list-main .progress {
+    background: #34ac6c;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.languages-list-main .lang-level {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+footer.cv-footer {
+    display: flex;
+    justify-content: right;
+     gap: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.github-link {
+    color: #9c9ea2;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: opacity 0.2s;
+    }
+
+.github-link:hover {
+    opacity: 0.8;
+}
+
+.footer-year {
+    font-size: 0.6rem;
+}
+
+.footer-right .course-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.course-logo {
+    width: 50px;
+    height: auto;
+    filter: brightness(1) invert(1);
+    opacity: 0.9;
+}
+.footer-logo{
+    background-color: #ff511c;
+    width: 3rem;
+    height: 3rem;
 }

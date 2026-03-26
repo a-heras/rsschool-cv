@@ -10,9 +10,11 @@
     <body>
         <div class="cv-container">
             <header class="page-header">
+                <div class="header-logo">
+                </div>
                 <nav class="nav-menu">
                     <ul>
-                        <li><a href="contact">Contact</a></li>
+                        <li><a href="#ontact">Contact</a></li>
                         <li><a href="#summary">Summary</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#languages">Languages</a></li>
@@ -22,14 +24,12 @@
                     </ul>
                 </nav>
             </header>
-            <main>
+            <main class="main-content">
                 <section id="contact" class="contact-section">
                     <div class="contact-left">
                         <img class="profile-photo" 
-                            src="https://randomuser.me/api/portraits/women/68.jpg" 
-                            alt="Artiom Herasimchyk"
-                            width="140"
-                            height="140">
+                            src="https://avatars.githubusercontent.com/u/32481400?s=400&u=3d67a7444a4647a9be028d784e20575aa9c85a72&v=4" 
+                            alt="Artiom Herasimchyk">
                         <div class="profile-info">
                             <h1>Artsiom Herasimchyk</h1>
                             <p class="title">Frontend Developer</p>
@@ -38,7 +38,7 @@
                     <div class="contact-right">
                         <ul class="contact-list">
                             <li>
-                                <span class="contact-icon">📍</span>
+                                <span class="contact-icon">🏠</span>
                                 <span>Minsk, Belarus</span>
                             </li>
                             <li>
@@ -46,7 +46,7 @@
                                 <a href="mailto:artem.ice33@gmail.com">artem.ice33@gmail.com</a>
                             </li>
                             <li>
-                                <span class="contact-icon">📱</span>
+                                <span class="contact-icon">📞</span>
                                 <span>+375(29)268-85-81</span>
                             </li>
                         </ul>
@@ -60,11 +60,31 @@
                 </section>
                 <section id="skills" class="info-section">
                     <h2>SKILLS</h2>
-                    <ul class="skills-list-main">
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>React, Vue</li>
-                        <li>Git, GitHub/GitLab</li>
-                        <li>npm, Webpack, VS Code, DevTools</li>
+                    <ul class="languages-list-main">
+                        <li>
+                            <span class="lang-name">HTML, CSS, JavaScript</span>
+                            <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="lang-name">React, Vue</span>
+                            <div class="progress-bar">
+                            <div class="progress" style="width: 30%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="lang-name">Git, GitHub/GitLab</span>
+                            <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="lang-name">npm, Webpack, VS Code, DevTools</span>
+                            <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </li>
                     </ul>
                 </section>
                 <section id="code-examples" class="info-section">
@@ -91,8 +111,14 @@
                     <h2>EDUCATION</h2>
                     <div class="study-item">
                         <div class="study-header">
-                            <span class="study-title">Grodno State College of engineering, technology and design</span>
+                            <a href="#" class="study-title">Grodno State College of engineering, technology and design</a>
                             <span class="study-year">2011-2015</span>
+                        </div>
+                    </div>
+                    <div class="study-item">
+                        <div class="study-header">
+                            <a class="study-title" href="https://rs.school/courses/javascript-preschool-ru">JS / Front-end Pre-school RU Course</a>
+                            <span class="study-year">2026</span>
                         </div>
                     </div>
                 </section>
@@ -102,21 +128,21 @@
                         <li>
                             <span class="lang-name">English</span>
                             <div class="progress-bar">
-                            <div class="progress" style="width: 90%"></div>
+                            <div class="progress" style="width: 10%"></div>
                             </div>
                             <span class="lang-level">Beginner</span>
                         </li>
                         <li>
                             <span class="lang-name">Russian</span>
                             <div class="progress-bar">
-                            <div class="progress" style="width: 95%"></div>
+                            <div class="progress" style="width: 80%"></div>
                             </div>
                             <span class="lang-level">Native</span>
                         </li>
                         <li>
                             <span class="lang-name">Belarussian</span>
                             <div class="progress-bar">
-                            <div class="progress" style="width: 95%"></div>
+                            <div class="progress" style="width: 80%"></div>
                             </div>
                             <span class="lang-level">Native</span>
                         </li>
@@ -135,12 +161,12 @@
                         <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank" class="course-link">
                             <img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/9af3d37e80717662fa46835afd2fe6c6f07aff88/tasks/cv/rs-school-logo.svg" 
                                 alt="Rolling Scopes School course logo" 
-                                class="course-logo"
-                                width="60"
-                                height="60">
+                                class="course-logo">
                         </a>
                     </div>
                 </div>
+                <div class="footer-logo">
+                        </div>
             </footer>
         </div>
     </body>
