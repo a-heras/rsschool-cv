@@ -1005,7 +1005,7 @@ div[id] {
    ============================================================ */
 footer {
     border-top: 1px solid var(--border);
-    padding: var(--sp-xl) 0 var(--sp-sm);
+    padding: var(--sp-xl) var(--sp-xxl) var(--sp-sm);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1036,17 +1036,17 @@ footer span {
 }
 
 .footer-logo {
-    height: 30px;
+    height: 15px;
     width: auto;
-    opacity: 0.35;
-    filter: grayscale(1) brightness(1.4);
+    opacity: 0.6;
+    filter: brightness(0) invert(1);
     transition: 0.25s ease;
     vertical-align: middle;
 }
 
 .footer-logo:hover {
-    opacity: 0.85;
-    filter: grayscale(0) brightness(1) drop-shadow(0 0 8px rgba(59, 130, 246, 0.35));
+    opacity: 1;
+    filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));
     transform: translateY(-1px);
 }
 
