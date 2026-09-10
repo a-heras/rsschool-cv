@@ -321,5 +321,25 @@
         </footer>
 
     </div>
+
+    <script>
+        (function() {
+            const btn = document.getElementById('counterBtn');
+            const resetBtn = document.getElementById('resetBtn');
+            const value = document.getElementById('countValue');
+            let count = 0;
+
+            btn.addEventListener('click', function() {
+                count++;
+                value.textContent = count;
+            });
+
+            resetBtn.addEventListener('click', function() {
+                count = 0;
+                value.textContent = count;
+            });
+        })();
+    </script>
+
 </body>
 </html>
